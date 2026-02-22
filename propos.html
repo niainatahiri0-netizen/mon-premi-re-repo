@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos</title>
+    <link rel="stylesheet" href="propos.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    
+    <header>
+        <nav class="navbar">
+            <div class="logo">⌘ Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="a-propos.html" class="active">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-btn">☰</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>À <span class="accent">propos</span></h1>
+            <p>Qui je suis et ce que je fais</p>
+        </section>
+
+        <section class="about-section">
+            <div class="about-container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <div class="image-wrapper">
+                            <img src="img/high-angle-gaming-setup-indoors.jpg" alt="">
+                            <div class="image-border"></div>
+                        </div>
+                    </div>
+
+                    <div class="about-content">
+                        <h2>TAHIRY</h2>
+                        <h3>Développeuse Web & Designere Créatif</h3>
+                        <p class="about-text">
+                             Je suis étudiante intéressée par l'informatique et les nouvelles technologies. J'aime créer des programmes simples pour résoudre de problémes du quotidienne et apprendre de nouvelles compétances
+                        </p>
+
+                        <div class="about-info">
+                            <div class="info-item">
+                                <span>📍</span>
+                                <div>
+                                    <h4>Localisation</h4>
+                                    <p>Ambalapaiso, Fianarantsoa</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span>📧</span>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>niainatahiri0@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span>📱</span>
+                                <div>
+                                    <h4>Téléphone</h4>
+                                    <p>+38 98 690 38</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span>🎂</span>
+                                <div>
+                                    <h4>Âge</h4>
+                                    <p>22 ans</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-stats">
+                            <div class="stat">
+                                <h4>1+</h4>
+                                <p>Années d'expérience</p>
+                            </div>
+                            <div class="stat">
+                                <h4>1+</h4>
+                                <p>Projets réalisés</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="values-section">
+                    <h2>Mes <span class="accent">valeurs</span></h2>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <div class="value-icon">⚡</div>
+                            <h3>Performance</h3>
+                            <p>Des sites rapides et optimisés pour une expérience utilisateur fluide et agréable.</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">🤝</div>
+                            <h3>Communication</h3>
+                            <p>Une communication claire et transparente tout au long de nos collaborations.</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">💡</div>
+                            <h3>Innovation</h3>
+                            <p>Toujours à l'affût des dernières tendances et technologies pour des solutions innovantes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-section">
+                    <h2>Mon <span class="accent">parcours</span></h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2026 - Présent</div>
+                            <div class="timeline-content">
+                                <h3>Apprentie Développeuse</h3>
+                                <p>Informatique à l'EMIT</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2017 - 2020</div>
+                            <div class="timeline-content">
+                                <h3>Licence Informatique</h3>
+                                <p>Université de Fianarantsoa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 Tahiry — Créatif & Passionné</p>
+            <div class="social-links">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        document.querySelector('.menu-btn').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
