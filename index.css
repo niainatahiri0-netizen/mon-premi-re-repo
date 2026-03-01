@@ -259,8 +259,8 @@ header {
     justify-content: center;
 }
 .hero-image .img-box {
-    width: 400px;
-    height: 400px;
+    max-width: 100%;
+    height: auto;
     border-radius: 50%;
     object-fit:  cover;
     background: blue;
